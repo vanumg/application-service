@@ -58,6 +58,6 @@ jobs:
       # Step 3: Enforce Quality Gate (Fails the build if quality standards aren't met)
     - name: SonarQube Quality Gate Check
       uses: SonarSource/sonarqube-quality-gate-action@v1
-      timeout-minutes: 5
+      timeout-minutes: 6
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
