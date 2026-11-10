@@ -50,6 +50,7 @@ jobs:
       with:
         args: >
           -Dsonar.projectKey=springboot_app
+          -Dsonar.organization=vanumg
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} # Not required for SonarCloud
