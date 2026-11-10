@@ -2,7 +2,7 @@ name: Maven Package
 
 on:
   push:
-    branches: [ main ]            # Triggers every time you push to 'main'
+    branches: [ application-service ]            # Triggers every time you push to 'main'
   workflow_dispatch:     
 jobs:
   build:
