@@ -43,7 +43,7 @@ jobs:
     - name: Maven Clean Verify
       run: mvn clean verify
       env:
-        SPRING_DATASOURCE_URL: jdbc:mysql://127.0.0.1:3306/mydb
+        SPRING_DATASOURCE_URL: jdbc:mysql://127.0.0.1:3306/testdb
         SPRING_DATASOURCE_USERNAME: root
         SPRING_DATASOURCE_PASSWORD: root
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
