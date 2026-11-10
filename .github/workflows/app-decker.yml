@@ -47,6 +47,10 @@ jobs:
         SPRING_DATASOURCE_PASSWORD: root
     - name: SonarQube Scan
       uses: SonarSource/sonarqube-scan-action@v3
+      with:
+        args: >
+          -Dsonar.projectKey=springboot_app
+          -Dsonar.organization=YOUR_ORGANIZATION_KEY
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} # Not required for SonarCloud
